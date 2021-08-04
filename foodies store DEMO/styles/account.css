@@ -1,0 +1,124 @@
+.account__container {
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+.form--hidden {
+    display: none;
+}
+
+.form>*:first-child {
+    margin-top: 0;
+}
+
+.form>*:last-child {
+    margin-bottom: 0;
+}
+
+.form__title {
+    background-color: #ff8177;
+    background-image: linear-gradient( to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success {
+    color: #44b56a;
+}
+
+.form__message--error {
+    color: #cc3333;
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #f77062;
+    outline: none;
+    background: #f7e7e4;
+}
+
+.form__input:focus {
+    border-color: #f77062;
+    background: #ffffff;
+}
+
+.form__input--error {
+    color: #cc3333;
+    border-color: #cc3333;
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #cc3333;
+}
+
+.form__button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #f77062;
+}
+
+.form__button:hover {
+    background: rgba(247, 112, 98, 0.6);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: #252c6a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .account__container {
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 2rem auto;
+        height: auto;
+    }
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | FOODIES</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/products.css" />
+    <!--Favicon-->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/Favicon.ico" type="image/x-icon" />
+    <!--box icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!--GOOGLE fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>FOODIES</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/products.html" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/account.html" class="navbar__links">Account</a>
+                </li>
+                <a href="/" class="nav-link"><i class='bx bxs-shopping-bag'></i></a>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!--All Products-->
+    <section>
+        <div class="products row-2">
+            <h1>All Products</h1>
+            <select name="" id="">
+                <option value="">Default Sorting</option>
+                <option value="">Sort by Popularity</option>
+                <option value="">Sort by Price (low - high)</option>
+                <option value="">Sort by Price (high-low)</option>
+            </select>
+        </div>
+    </section>
+    <!--filter-->
+    <section>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Default Sorting</button>
+            <button id="onlyDrinks" class="btn" onclick="filterSelection('drinks')">Only Drinks</button>
+            <button id="onlyFood" class="btn" onclick="filterSelection('food')">Only Food</button>
+        </div>
+
+    </section>
+    <!--all products-->
+    <section class="featured-products">
+        <div class="filterDiv food">
+            <div style="background-image: url('images/salad.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Salad
+            </p>
+
+            <p class="shop-item-price">
+                $20.99
+            </p>
+            <button>
+               Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv drinks">
+            <div style="background-image: url('images/orange.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Orange Juice
+            </p>
+
+            <p class="shop-item-price">
+                $9.99
+            </p>
+            <button>
+                Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv food">
+            <div style="background-image: url('images/sushi.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Sushi
+            </p>
+            <p class="shop-item-price">
+                $39.99
+            </p>
+
+            <button>
+                Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv food">
+            <div style="background-image: url('images/burger.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Burger
+            </p>
+
+            <p class="shop-item-price">
+                $20.99
+            </p>
+            <button>
+                Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv drinks">
+            <div style="background-image: url('images/watermelon.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Watermelon Juice
+            </p>
+
+            <p class="shop-item-price">
+                $9.99
+            </p>
+            <button>
+                Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv food">
+            <div style="background-image: url('images/chips.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Chips
+            </p>
+            <p class="shop-item-price">
+                $9.99
+            </p>
+
+            <button>
+                Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv drinks">
+            <div style="background-image: url('images/beer.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Beer
+            </p>
+
+            <p class="shop-item-price">
+                $7.99
+            </p>
+            <button>
+                Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv food">
+            <div style="background-image: url('images/chicken.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Chicken
+            </p>
+
+            <p class="shop-item-price">
+                $29.99
+            </p>
+            <button>
+                Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv drinks">
+            <div style="background-image: url('images/coke.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Coke
+            </p>
+            <p class="shop-item-price">
+                $2.99
+            </p>
+
+            <button>
+                Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv drinks">
+            <div style="background-image: url('images/coffee.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Coffee
+            </p>
+
+            <p class="shop-item-price">
+                $7.99
+            </p>
+            <button>
+                Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv food">
+            <div style="background-image: url('images/spagetti.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Pasta
+            </p>
+
+            <p class="shop-item-price">
+                $29.99
+            </p>
+            <button>
+                Add To Cart
+            </button>
+        </div>
+        <div class="filterDiv drinks">
+            <div style="background-image: url('images/water.jpg');" class="featured-product-item-image"></div>
+            <p class="name">
+                Water
+            </p>
+            <p class="shop-item-price">
+                $1.99
+            </p>
+
+            <button>
+                Add To Cart
+            </button>
+        </div>
+
+    </section>
+    <div class="page-btn">
+        <span><a href="products.html">1</a></span>
+        <span><a href="#">2</a></span>
+        <span><a href="#">3</a></span>
+        <span><a href="#">4</a></span>
+        <span><a href="#">5</a></span>
+        <span>&#8594;</span>
+    </div>
+
+
+
+
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/sign__up">The company</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="/">Enquiries</a>
+                    <a href="/">Complains</a>
+
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Service Hours</h2>
+                    <p> Opens: 8am <br> Closes: 8pm</p>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a>
+                    <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fas fa-gem"></i>FOODIES</a>
+                </div>
+                <p class="website__rights">© FOODIES 2021. All rights reserved</p>
+
+            </div>
+    </div>
+    </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
